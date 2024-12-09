@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIDAD FINAL de la 3RA EVA - FP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            font-size: 2em;
+        }
+        .algoritmos ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+        .algoritmos li {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .integrantes {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .integrantes p {
+            margin: 5px 0;
+        }
+        .description {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        // Funciones para cada algoritmo
+        function calcularComision() {
+            let ventas = prompt("Introduce el valor de las ventas:");
+            let comision = ventas * 0.05; // Ejemplo de comisión del 5%
+            alert("La comisión es: " + comision);
+        }
+
+        function gestionInventario() {
+            let producto = prompt("Introduce el nombre del producto:");
+            let cantidad = prompt("Introduce la cantidad disponible:");
+            alert("Producto: " + producto + "\nCantidad disponible: " + cantidad);
+        }
+
+        function calculoImpuestos() {
+            let precio = prompt("Introduce el precio del producto:");
+            let impuestos = precio * 0.16; // Ejemplo de impuesto del 16%
+            alert("El impuesto es: " + impuestos);
+        }
+
+        function divisionRastreoComisiones() {
+            let totalVentas = prompt("Introduce el total de ventas:");
+            let comisionTotal = prompt("Introduce la comisión total a repartir:");
+            let comisionIndividual = comisionTotal / totalVentas;
+            alert("La comisión individual es: " + comisionIndividual);
+        }
+
+        function impuestosDiferentesTasas() {
+            let precio = prompt("Introduce el precio del producto:");
+            let tasaImpuesto = prompt("Introduce la tasa de impuesto (ejemplo: 0.16 para 16%):");
+            let impuesto = precio * tasaImpuesto;
+            alert("El impuesto es: " + impuesto);
+        }
+
+        function deteccionPlagas() {
+            alert("Función de detección de plagas simulada. Requiere visión por computadora.");
+        }
+
+        function rutasOptimas() {
+            alert("Función de rutas óptimas. Necesita algoritmos avanzados de optimización.");
+        }
+
+        function descuentoVolumen() {
+            let cantidad = prompt("Introduce la cantidad de productos:");
+            let descuento = (cantidad >= 10) ? 0.10 : 0; // 10% de descuento si se compran 10 o más
+            alert("Descuento aplicado: " + (descuento * 100) + "%");
+        }
+
+        function convertirMetrosKilometros() {
+            let metros = prompt("Introduce la cantidad de metros:");
+            let kilometros = metros / 1000;
+            alert(metros + " metros son " + kilometros + " kilómetros.");
+        }
+
+        function celsiusAFahrenheit() {
+            let celsius = prompt("Introduce los grados Celsius:");
+            let fahrenheit = (celsius * 9/5) + 32;
+            alert(celsius + "°C son " + fahrenheit + "°F.");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>ACTIDAD FINAL de la 3RA EVA - FP</h1>
+</header>
+
+<div class="container">
+    <div class="description">
+        <h2>Descripción del Proyecto</h2>
+        <p>Este proyecto consiste en la creación de 10 algoritmos fundamentales aplicados a la gestión de ventas, cálculo de impuestos, control de inventarios, detección de plagas, entre otros. Cada algoritmo está programado en JavaScript para ser utilizado directamente en el navegador.</p>
+    </div>
+
+    <h2>Algoritmos</h2>
+    <div class="algoritmos">
+        <ul>
+            <li><button onclick="calcularComision()">1. Calcular comisión</button></li>
+            <li><button onclick="gestionInventario()">2. Gestión de inventario en un punto de venta</button></li>
+            <li><button onclick="calculoImpuestos()">3. Control de facturación y cálculo de impuestos</button></li>
+            <li><button onclick="divisionRastreoComisiones()">4. División y rastreo de comisiones de venta</button></li>
+            <li><button onclick="impuestosDiferentesTasas()">5. Cálculo de impuestos para productos con diferentes tasas</button></li>
+            <li><button onclick="deteccionPlagas()">6. Detección y control de plagas mediante visión por computadora</button></li>
+            <li><button onclick="rutasOptimas()">7. Rutas óptimas para la distribución de productos frescos</button></li>
+            <li><button onclick="descuentoVolumen()">8. Cálculo de descuento en compras por volumen</button></li>
+            <li><button onclick="convertirMetrosKilometros()">9. Convertir metros a kilómetros</button></li>
+            <li><button onclick="celsiusAFahrenheit()">10. Conversión de grados Celsius a Fahrenheit</button></li>
+        </ul>
+    </div>
+
+    <h2>Integrantes del equipo</h2>
+    <div class="integrantes">
+        <p>Hernández Rivera Diego Eduardo</p>
+        <p>Hoyos Rivera Gustavo</p>
+        <p>Hoyos Saldaña Mario Emmanuel</p>
+        <p>Landa Derian Yassir</p>
+        <p>Lara Ortega Xavier</p>
+    </div>
+</div>
+
+</body>
+</html>
